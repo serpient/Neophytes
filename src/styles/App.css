@@ -1,24 +1,83 @@
-.App {
-  text-align: center; }
+/*
+==========================
+IMPORT PARTIAL SASS FILES
+==========================
+*/
+/*
+==========================
+COLORS
+==========================
+*/
+/*
+==========================
+FONTS
+==========================
+*/
+/*
+==========================
+CONTAINER
+==========================
+*/
+/*
+==========================
+HEADER
+==========================
+*/
+/*
+==========================
+FOOTER
+==========================
+*/
+/*
+==========================
+PROJECTS CONTAINER
+==========================
+*/
+/*
+==========================
+GRID
+==========================
+*/
+body {
+  background-color: white; }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px; }
+.container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-auto-rows: 50px;
+  grid-gap: 10px; }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white; }
+.header {
+  grid-column: 1 / -1;
+  background-color: green; }
 
-.App-title {
-  font-size: 1.5em; }
+.footer {
+  grid-column: 1 / -1;
+  background-color: pink; }
 
-.App-intro {
-  font-size: large; }
+.landing-image {
+  grid-column: 1 / -1;
+  grid-row: span 10;
+  background-color: grey; }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(360deg); } }
+.landing-image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.landing-process {
+  grid-column: span 3;
+  grid-row: span 4;
+  background-color: red; }
+
+.landing-projects {
+  grid-column: span 3;
+  grid-row: span 4;
+  background-color: purple; }
+
+/*
+==========================
+MEDIA QUERY GRID
+==========================
+*/
